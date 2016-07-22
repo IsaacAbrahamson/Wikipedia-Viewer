@@ -19,6 +19,7 @@ body {
   src: url(https://dl.dropbox.com/s/awvzm5b2q9fujdn/KTF-Roadbrush.ttf?dl=0);
 }
 
+/* Utility Classes */
 .middle {
   position: absolute;
   top: 50%;
@@ -37,6 +38,11 @@ body {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
+/* Search Bar */
 #search-container {
   position: relative;
   transition: height 400ms;
@@ -129,21 +135,18 @@ input[type=text] {
   cursor: pointer;
 }
 
+/* Search Results */
+#content {
+  width: 100%;
+  min-height: 100%;
+}
+
 #results {
   position: relative;
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 65px;
-}
-
-.hidden {
-  display: none;
-}
-
-#content {
-  width: 100%;
-  min-height: 100%;
 }
 
 #footer {
@@ -232,8 +235,7 @@ h3 {
 }
 
 
-/*Page Load*/
-
+/* Page loader made with cssload.net */
 .overlay {
   background-color: white;
   position: fixed;
