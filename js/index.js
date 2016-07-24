@@ -62,7 +62,7 @@ $(document).ready(function () {
     $('#results').removeClass('hidden');
 
     var searchItem = $('input[type=text]').val();
-    $.getJSON("https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=" + searchItem + "&callback=?", function (json) {
+    $.getJSON("https://en.wikipedia.org/w/api.php?action=query&format=json&limit=15&list=search&utf8=1&srsearch=" + searchItem + "&callback=?", function (json) {
       var pages = json.query.search.length;
       for (var index = 0; index < pages; index++) {
         var pageTitle = json.query.search[index].title;
